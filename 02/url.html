@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        [v-cloak]{
+            background-color: #2b542c;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="app">
+        <div class="col-md-4 col-md-offset-4">
+            <a :href="url">{{cleanUrl}}</a>
+            <input type="text" v-model="url" class="form-control">
+            <button @click="humanizUrl" class="btn btn-primary btn-block"> press it!!</button>
+        </div>
+    </div>
+</div>
+<script src="js/vue.js"></script>
+<script src="js/bundle.js"></script>
+</body>
+</html>

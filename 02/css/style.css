@@ -1,0 +1,18 @@
+body{
+    background: url("https://source.unsplash.com/category/nature/1920x1080");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.api{
+    position: relative;
+    top: 25vh;
+    background-color: #5f5f5f;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 9px 14px 4px rgba(0, 0, 0, 0.32);
+}
+

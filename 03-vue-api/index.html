@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fetch api with vue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+
+  </head>
+  <body>
+    <div class="container" id="app">
+      <!-- <div class="columns medium-3" v-for="result in results">
+       <div class="card">
+         <div class="card-divider">
+           {{ result.title }}
+         </div>
+         <div class="card-section">
+           <p>{{ result.abstract }}.</p>
+         </div>
+       </div>
+     </div> -->
+     <div class="row" v-for="posts in processedPosts">
+  <div class="columns large-3 medium-6" v-for="post in posts">
+    <div class="card">
+    <div class="card-divider">
+      {{ post.title }}
+    </div>
+    <a :href="post.url" target="_blank"><img :src="post.image_url"></a>
+    <div class="card-section">
+      <p>{{ post.abstract }}</p>
+    </div>
+  </div>
+  </div>
+</div>
+   </div>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/vue@2.5.3/dist/vue.js"></script>
+<script src="app.js"></script>
+
+  </body>
+
+</html>
